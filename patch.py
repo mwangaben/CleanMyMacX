@@ -34,10 +34,10 @@ def main():
         binary = bytearray(file.read())
 
         # Function: -[CMMASLimitation isExceeded]
-        # Signature: 55 48 89 E5 48 8B 35 B8 FA 64 00 FF 15 2A 78 55 00 31 C9 48 85 C0 0F 9E C1 89 C8 5D C3
+        # Signature: 55 48 89 E5 48 8B 35 B2 D0 64 00 FF 15 1C 5E 55 00 31 C9 48 85 C0 0F 9E C1 89 C8 5D C3
         # Patch: 48 31 C0 C3
 
-        offset = binary.find(b'\x55\x48\x89\xE5\x48\x8B\x35\xB8\xFA\x64\x00\xFF\x15\x2A\x78\x55\x00\x31\xC9\x48\x85\xC0\x0F\x9E\xC1\x89\xC8\x5D\xC3')
+        offset = binary.find(b'\x55\x48\x89\xE5\x48\x8B\x35\xB2\xD0\x64\x00\xFF\x15\x1C\x5E\x55\x00\x31\xC9\x48\x85\xC0\x0F\x9E\xC1\x89\xC8\x5D\xC3')
 
         if offset == -1:
             function_not_found('-[CMMASLimitation isExceeded]')
@@ -66,10 +66,10 @@ def main():
         binary = bytearray(file.read())
 
         # Function: -[CMMASMenuLimitation isExceeded]
-        # Signature: 55 48 89 E5 48 8B 35 09 F6 2D 00 FF 15 2B 49 27 00 31 C9 48 85 C0 0F 9E C1 89 C8 5D C3
+        # Signature: 55 48 89 E5 48 8B 35 99 15 2E 00 FF 15 7B 68 27 00 31 C9 48 85 C0 0F 9E C1 89 C8 5D C3
         # Patch: 48 31 C0 C3
 
-        offset = binary.find(b'\x55\x48\x89\xE5\x48\x8B\x35\x09\xF6\x2D\x00\xFF\x15\x2B\x49\x27\x00\x31\xC9\x48\x85\xC0\x0F\x9E\xC1\x89\xC8\x5D\xC3')
+        offset = binary.find(b'\x55\x48\x89\xE5\x48\x8B\x35\x99\x15\x2E\x00\xFF\x15\x7B\x68\x27\x00\x31\xC9\x48\x85\xC0\x0F\x9E\xC1\x89\xC8\x5D\xC3')
 
         if offset == -1:
             function_not_found('-[CMMASMenuLimitation isExceeded]')
